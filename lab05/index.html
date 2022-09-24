@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Green Grove Elementary School Field Trip Form</title>
+
+	<style>
+		#header {
+			height: 300px;
+			margin: 0 auto;
+			background-image: url("elementary_school.jpeg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 40% 60%;
+			padding: 50px 10px;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 1px black;
+		}
+
+		#content {
+			padding: 20px 100px;
+			margin: 0 auto;
+			background-color: #00994d;
+			color: white;
+			line-height: 50px;
+		}
+
+		.form-row {
+			font-size: 20px;
+		}
+
+		.main-label {
+			font-weight: bolder;
+			font-size: 23px;
+		}
+
+		button {
+			padding: 10px 20px;
+
+		}
+
+		#text-box {
+			width: 80%;
+			height: 60px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<h1>Green Grove Elementary School Field Trip Form</h1>
+	</div>
+
+	<div id="content">
+		<form action="confirmation.html">
+			<div class="form-row">
+				<label class="main-label">Student's Name: </label>
+				<input type="text" placeholder="Enter name" required>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Student's Grade: </label>
+				<input type="radio" name="student-grade" value="k">kindergarten
+				<input type="radio" name="student-grade" value="1">1st grade
+				<input type="radio" name="student-grade" value="2">2st grade
+				<input type="radio" name="student-grade" value="3">3st grade
+				<input type="radio" name="student-grade" value="4">4st grade
+				<input type="radio" name="student-grade" value="5">5st grade
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Lunch is going to be provided during the field trip. What would your child have for lunch?</label>
+			<div>
+				<input type="checkbox" name="student-lunch" value="Spaghetti">Spaghetti
+				<input type="checkbox" name="student-lunch" value="Sandwich">Sandwich
+				<input type="checkbox" name="student-lunch" value="apples">Apple Slices
+				<input type="checkbox" name="student-lunch" value="banana">Banana
+				<input type="checkbox" name="student-lunch" value="OJ">Orange Juice
+				<input type="checkbox" name="student-lunch" value="AJ">Apple Juice
+			</div>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Preferred emergency contact: </label>
+				<select>
+					<option value="mother">Mother</option>
+					<option value="father">Father</option>
+					<option value="sibling">Sibling</option>
+					<option value="sibling">Other</option>
+				</select>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Name of Emergency Contact: </label>
+				<input type="text" placeholder="Enter name">
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Emergency Contact Number: </label>
+				<input type="number" placeholder="Enter phone number">
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Additional Information: </label>
+				<div>
+				<textarea id="text-box" placeholder="Add information"></textarea>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<input type="checkbox" name="t&c" value="agree"> I agree to the Terms & Conditions
+			</div>
+
+			<div class="form-row">
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</div>
+		</form>
+
+	</div>
+
+
+
+</body>
+
+
+</html>
