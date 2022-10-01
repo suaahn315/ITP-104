@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+	<style>
+
+		body {
+			background-image: url("background.jpg");
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 50px;
+			padding: 30px;
+			text-shadow: 2px 2px 2px white;
+			font-family: "Lucida Console", monospace;
+		}
+
+		p {
+			font-size: 20px;
+			font-family: "Lucida Console", monospace;
+		}
+
+		#gallery {
+			background-color: dimgray;
+			margin: 0 auto;
+		}
+
+		.frame {
+			width: 320px;
+			height: 320px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		.portrait {
+			width: 100%;
+			height: auto;
+		}
+
+		.frameContainer {
+			background-color: white;
+			text-align: center;
+			margin: 50px;
+			width: 320px;
+			float: left;
+			border: 4px solid black;
+			padding: 15px 15px 30px 15px;
+		}
+
+		.frameContainer p {visibility: hidden;}
+		.frameContainer:hover p {visibility: visible;}
+
+	</style>
+</head>
+<body>
+		<h1>Rookie the Pom</h1>
+
+		<div id="gallery">
+			<div class="frameContainer">
+				<div class="frame">
+					<img class="portrait" src="img1.jpg" alt="Rookie and Cow">
+				</div>
+				<p>Rookie and his best friend</p>
+			</div>
+
+			<div class="frameContainer">
+				<div class="frame">
+					<img class="portrait" src="img2.jpg" alt="Sleepy Rookie">
+				</div>
+				<p>Sleepy Rookie</p>
+			</div>
+
+			<div class="frameContainer">
+				<div class="frame">
+					<img class="portrait" src="img3.jpg" alt="Sleeping Rookie">
+				</div>
+				<p>Nap Time</p>
+			</div>
+
+			<div class="frameContainer">
+				<div class="frame">
+					<img class="portrait" src="img4.jpg" alt="Rookie close-up">
+				</div>
+				<p>Rookie scrolling<br>through Tik Tok</p>
+			</div>
+
+			<div class="frameContainer">
+				<div class="frame">
+					<img class="portrait" src="img5.jpg" alt="Rookie headband">
+				</div>
+				<p>Rookie the Skincare King</p>
+			</div>
+
+			<div class="frameContainer">
+				<div class="frame">
+					<img class="portrait" src="img6.jpg" alt="Shy Rookie">
+				</div>
+				<p>Shy Rookie</p>
+			</div>
+		</div>
+
+</body>
+</html>
