@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+	#header {
+		background-image: url("gallery_images/background.jpeg");
+		height: 450px;
+		background-position: 90% 10%;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	#container {
+		overflow: hidden;
+		padding: 3px;
+	}
+
+	#gallery {
+		width: 950px;
+		margin: auto;
+		height: auto;
+		background-color: #884dff;
+	}
+	
+	#first-row img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#second-row img {
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#third-row img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.frame1 {
+		float: left;
+		margin: 3px;
+		height: 200px;
+		width: 300px;
+		overflow: hidden;
+		background-color: yellow;
+	}
+
+	.frame2 {
+		float: left;
+		margin: 3px;
+		height: 200px;
+		width: 213px;
+		overflow: hidden;
+		background-color: greenyellow;
+	}
+
+	.frame3 {
+		float: left;
+		margin: 3px;
+		height: 200px;
+		width: 200px;
+		overflow: hidden;
+		background-color: red;
+	}
+
+	.frame4 {
+		float: left;
+		margin: 3px;
+		height: 300px;
+		width: 266px;
+		overflow: hidden;
+		background-color: blueviolet;
+	}
+
+	.frame5 {
+		float: left;
+		margin: 3px;
+		width: 200px;
+		height: 300px;
+		overflow: hidden;
+		background-color: black;
+	}
+
+	.frame6 {
+		float: left;
+		margin: 3px;
+		width: 466px;
+		height: 300px;
+		overflow: hidden;
+		background-color: hotpink;
+	}
+
+	.frame7 {
+		float: left;
+		margin: 3px;
+		width: 313px;
+		height: 200px;
+		overflow: hidden;
+		background-color: orangered;
+	}
+
+	#gallery > img {
+		width: auto;
+		height: 100%;
+	}
+
+	.current {
+		background-color: #ffb3b3;
+	}
+
+	#nav .current {
+		color: black;
+	}
+
+</style>
+
+</head>
+<body>
+<div id="header">
+	<h1>Gallery</h1>
+</div>
+
+<div id="nav-wrapper">
+	<div id="nav">
+		<a href="index.html">Home</a>
+		<a class="current" href="gallery.html">Gallery</a>
+	</div> <!-- #nav -->
+</div> <!-- #nav-wrapper -->
+
+<div id="container">
+	<div id="gallery">
+		<div id="first-row">
+			<div class="frame1">
+				<img src="gallery_images/img1.jpeg" alt="cast group picture">
+			</div>
+
+			<div class="frame2">
+				<img src="gallery_images/img2.jpeg" alt="garden">
+			</div>
+
+			<div class="frame3">
+				<img src="gallery_images/img10.jpeg" alt="concierges ">
+			</div>
+
+			<div class="frame2">
+				<img src="gallery_images/img8.jpg" alt="under the tree">
+			</div>
+		</div> <!-- .first-row -->
+
+		<div id="second-row">
+			<div class="frame4">
+				<img src="gallery_images/img9.jpg" alt="concierges 2">
+			</div>
+
+			<div class="frame5">
+				<img src="gallery_images/img6.jpeg" alt="IU solo picture">
+			</div>
+
+			<div class="frame6">
+				<img src="gallery_images/img3.jpeg" alt="greeting">
+			</div>
+		</div> <!-- .second-row -->
+
+		<div id="third-row">
+			<div class="frame3">
+				<img src="gallery_images/img4.jpg" alt="discussing">
+			</div>
+
+			<div class="frame2">
+				<img src="gallery_images/img5.jpeg" alt="at the parking lot">
+			</div>
+
+			<div class="frame3">
+				<img src="gallery_images/img11.jpg" alt="around the table">
+			</div>
+
+			<div class="frame7">
+				<img src="gallery_images/img7.jpeg" alt="IU close-up">
+			</div>
+		</div> <!-- .third-row -->
+	</div> <!-- #gallery -->
+</div> <!-- #container -->
+
+<div class="clearfloat"></div>
+
+<div id="footer">
+	<p>Watch it on Netflix!</p>
+</div>
+
+</body>
+</html>
