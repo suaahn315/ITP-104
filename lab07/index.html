@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+	<title>Image Puzzle</title>
+
+	<style>
+		body {
+			background-image: url("background.jpeg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 30% 70%;
+		}
+		h1 {
+			font-size: 40px;
+			text-align: center;
+			text-shadow: 2px 2px 2px white;
+			padding-bottom: 30px;
+		}
+
+		#puzzle {
+			margin: 0 auto;
+			width: 630px;
+			padding: 0;
+
+		}
+
+		#puzzle img {
+			width: 200px;
+			box-shadow: 4px 4px 3px #aeeaea;
+			margin: 0;
+			padding: 0;
+		}
+
+		#row1 .left {
+			position: relative;
+			top: 30px;
+			left: 30px;
+		}
+
+		#row1 .center {
+			position: relative;
+			bottom: 5px;
+			left: 20px;
+		}
+
+		#row1 .right {
+			position: relative;
+			bottom: 30px;
+			left: 30px;
+		}
+
+		#row2 .left {
+			position: relative;
+			right: 20px;
+		}
+
+		#row2 .center {
+			position: relative;
+			bottom: 5px;
+			right: 10px;
+		}
+
+		#row2 .right {
+			position: relative;
+			bottom: 20px;
+		}
+
+		#row3 .left {
+			position: relative;
+			top: 15px;
+			right: 10px;
+		}
+
+		#row3 .center {
+			position: relative;
+			top: 25px;
+			left: 20px;
+		}
+
+		#row3 .right {
+			position: relative;
+			bottom: 30px;
+			right: 30px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<h1>Rookie's Best Friend</h1>
+
+	<div id="puzzle">
+		<div id="row1">
+			<img class="left" src="split_images/row-1-column-1.jpg" alt="row1 column1">
+			<img class="center" src="split_images/row-1-column-2.jpg" alt="row1 column2">
+			<img class="right" src="split_images/row-1-column-3.jpg" alt="row1 column3">
+		</div> <!-- #row1 -->
+
+		<div id="row2">
+			<img class="left" src="split_images/row-2-column-1.jpg" alt="row2 column1">
+			<img class="center" src="split_images/row-2-column-2.jpg" alt="row2 column2">
+			<img class="right" src="split_images/row-2-column-3.jpg" alt="row2 column3">
+		</div> <!-- #row2 -->
+
+		<div id="row3">
+			<img class="left" src="split_images/row-3-column-1.jpg" alt="row3 column1">
+			<img class="center" src="split_images/row-3-column-2.jpg" alt="row3 column2">
+			<img class="right" src="split_images/row-3-column-3.jpg" alt="row3 column3">
+		</div> <!-- #row3 -->
+	</div> <!-- #puzzle -->
+
+</body>
+
+</html>
