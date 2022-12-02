@@ -1,0 +1,59 @@
+body {
+		font-family: 'Roboto Slab', serif;
+		margin: 0;
+	}
+
+	#header {
+		background-color: #E7717D;
+		height: 150px;
+		padding: 10px;
+		margin: 0;
+	}
+
+	#header h1 {
+		font-size: 80px;
+		line-height: 150px;
+		margin: 0;
+		float: left;
+		padding-left: 10px;
+	}
+
+	#menu {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		display: inline-block;
+		line-height: 170px;
+	}
+
+	#header a {
+		text-decoration: none;
+		color: black;
+		padding: 10px;
+	}
+
+	.menu_item {
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	.crv_button {
+		font-size: 25px;
+		display: inline-block;
+		padding-right: 10px;
+	}
+
+	.crv_button a {
+		background-color: #C2CAD0;
+		border-radius: 10px;
+	}
+
+	#menu a:hover {
+		color: white;
+	}
+
+	#content img {
+		height: auto;
+	}
+
+	.clearfloat {clear: both;}
