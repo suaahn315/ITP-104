@@ -30,17 +30,13 @@
 			padding-bottom: 10px;
 		}
 
-		p, ul {
-			font-size: 20px;
-		}
-
 		.about_me img {
 			height: auto;
 			width: 320px;
 		}
 
 		.about_me_text {
-			padding: 70px 0px 70px 100px;
+			padding: 30px 0px 70px 100px;
 			display: inline-block;
 			width: 50%;
 		}
@@ -71,7 +67,7 @@
 
 		.education_info {
 			text-align: right;
-			padding-right: 70px;
+			padding-right: 100px;
 		}
 
 		.education_info hr {
@@ -103,6 +99,113 @@
 			margin-left: 70px;
 		}
 
+		.skills h1 {
+			padding-left: 100px;
+			margin-top: 70px;
+		}
+
+		.skills img {
+			height: 150px;
+			width: 150px;
+		}
+
+		.skills .vertical {
+			width: 90px;
+			height: 150px;
+			padding: 12px 30px;
+		}
+
+		.skills .horizontal {
+			width: 150px;
+			height: 150px;
+			padding: 32px 0px;
+		}
+
+		.skills .excel {
+			width: 150px;
+			height: 150px;
+			padding: 5px 0px;
+		}
+
+		.skills h1 + hr {
+			width: 7%;
+			margin-left: 113px;
+		}
+
+		.skills .row1, .row2 {
+			padding-top: 50px;
+			text-align: center;
+		}
+
+		.skills .row2 {
+			margin-bottom: 60px;
+		}
+
+		.skills .img_container {
+			margin: 0px 100px 30px 0px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.overlay p {
+			line-height: 150px;
+		}
+
+		.skills .overlay {
+			background-color: rgba(0,0,0,.6);
+			color: white;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			margin: auto;
+			transition: all 500ms linear;
+			transfrom: scale(3);
+			opacity: 0;
+		}
+
+		.skills .img_container:hover .overlay {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		.hobbies {
+			text-align: center;
+			padding-bottom: 100px;
+		}
+
+		.hobbies h1 {
+			margin: 80px 100px 0px 0px;
+			text-align: right;
+		}
+
+		.hobbies hr {
+			margin-right: 8%;
+			width: 25%;
+		}
+
+		.hobbies img {
+			width: 250px;
+			height: 250px;
+			border-radius: 5px;
+		}
+
+		.hobbies p {
+			font-size: 25px;
+			vertical-align: middle;
+		}
+
+		.gif_container {
+			display: inline-block;
+			background-color: #AFD275;
+			padding: 10px;
+			border-radius: 10px;
+			margin: 30px 30px 30px 0px;
+			vertical-align: middle;
+		}
+
 		#footer {
 			background-color: #7E685A;
 			height: 150px;
@@ -111,7 +214,7 @@
 
 		#footer p {
 			font-size: 20px;
-			padding: 20px 0px 20px 0px;
+			padding: 20px 0px;
 			margin: 0;
 		}
 
@@ -181,22 +284,105 @@
 			<hr>
 		</div>
 
-	<!-- 	<div class="skills">
+		<div class="skills">
 			<h1>Skills</h1>
+			<hr align="left">
+			<div class="row1">
+				<div class="img_container">
+					<img class="excel" src="img/skills/MSexcel.png">
+					<div class="overlay">
+						<p>Microsoft Excel</p>
+					</div>
+				</div>
+				<div class="img_container">
+					<img src="img/skills/MSpowerpoint.png">
+					<div class="overlay">
+						<p>Microsoft Powerpoint</p>
+					</div>
+				</div>
+				<div class="img_container">
+					<img class="horizontal" src="img/skills/MSword.png">
+					<div class="overlay">
+						<p>Microsoft Word</p>
+					</div>
+				</div>
+				<div class="img_container">
+					<img src="img/skills/python.png">
+					<div class="overlay">
+						<p>Python</p>
+					</div>
+				</div>
+			</div>
+			<div class="row2">
+				<div class="img_container">
+					<img src="img/skills/html.png">
+					<div class="overlay">
+						<p>HTML</p>
+					</div>
+				</div>
+				<div class="img_container">
+					<img class="vertical" src="img/skills/css.png">
+					<div class="overlay">
+						<p>CSS</p>
+					</div>
+				</div>
+				<div class="img_container">
+					<img src="img/skills/java.png">
+					<div class="overlay">
+						<p>Java</p>
+					</div>
+				</div>
+				<div class="img_container">
+					<img src="img/skills/finalcutpro.png">
+					<div class="overlay">
+						<p>Final Cut Pro</p>
+					</div>
+				</div>
+			</div>
 			<hr>
 		</div>
 
 		<div class="hobbies">
 			<h1>Hobbies/Interests</h1>
+			<hr align="right">
+			<div class="gif_container">
+				<img src="img/hobbies/basketball.gif">
+				<p>Basketball</p>
+			</div>
+			<div class="gif_container">
+				<img src="img/hobbies/golf.gif">
+				<p>Golf</p>
+			</div>
+			<div class="gif_container">
+				<img src="img/hobbies/singing.gif">
+				<p>Singing</p>
+			</div>				
+			<div class="gif_container">
+				<img src="img/hobbies/dancing.gif">
+				<p>Dancing</p>
+			</div>
+			<div class="gif_container">
+				<img src="img/hobbies/cooking.gif">
+				<p>Cooking</p>				
+			</div>
+			<div class="gif_container">
+				<img src="img/hobbies/baking.gif">
+				<p>Baking</p>
+			</div>
+			<div class="gif_container">
+				<img src="img/hobbies/travel.gif">
+				<p>Traveling</p>
+			</div>
+			<div class="clearfloat"></div>
 		</div>
-	</div> -->
+	</div>
 
 	<div id="footer">
 		<p>Contact me!</p>
-		<img src="img/email.png" alt="Email Icon">
-		<img src="img/phone.png" alt="Phone Icon">
-		<img src="img/linkedin.png" alt="LinkedIn Icon">
-		<img src="img/instagram.png" alt="Instagram Icon">
+		<a href="mailto:suaahn315@gmail.com"><img src="img/contact/email.png" alt="Email Icon"></a>
+		<a href="tel:3235335528"><img src="img/contact/phone.png" alt="Phone Icon"></a>
+		<a href="https://www.linkedin.com/in/suaahn315"><img src="img/contact/linkedin.png" alt="LinkedIn Icon"></a>
+		<a href="https://www.instagram.com/suaahn03/"><img src="img/contact/instagram.png" alt="Instagram Icon"></a>
 	</div>
 
 
