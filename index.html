@@ -1,26 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Su A Ahn | Resume</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Responsive Website Design Lecture Code">
+	<meta name="keywords" content="Responsive, ITP104, USC, Website">
+	<meta name="author" content="Su A Ahn">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&family=Yusei+Magic&display=swap" rel="stylesheet">
+
+	<title>Su A Ahn | Student Page</title>
 	<style>
+
+		h1, h2, h3 {
+			font-family: 'Signika Negative', sans-serif;
+		}
+
+		b {
+			background-color: midnightblue;
+			color: whitesmoke;
+		}
+
+		img {
+			height: 200px;
+			width: auto;
+		}
+
 		body {
-			background-color: lightsteelblue;
+			background-image: url("website_background.jpeg");
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 
-		h1 {
-			color: midnightblue;
-			font-size: 30px;
+		#container {
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: gray;
 		}
 
-		h2 {
-			color: chocolate;
-			font-size: 22px;
-			font-weight: bold;
+		#row1 {
+			background-color: #ff9966;
+			width: 870px;
+			text-align: center;
+			padding: 15px;
 		}
 
-		h3 {
-			color: #E04836;
-			font-style: italic;
+		#row2 {
+			background-color: #E6E6DC;
+			width: 870px;
+			padding: 20px 15px;
+
+		}
+
+		.row2_column1 {
+			width: 420px;
+			float: left;
+		}
+
+		.row2_column2 {
+			width: 420px;
+			float: left;
+		}
+
+		#row3 {
+			background-color: #81A594;
+			width: 870px;
+			padding: 70px 15px;
+		}
+
+		.row3_column3 {
+			width: 435px;
+			float: left;
+		}
+
+		.row3_column4 {
+			width: 435px;
+			float: left;
+		}
+
+		.clearfloat {clear: both;}
+
+		@media (max-width: 767px) {
+
+			#container {
+				width: auto;
+			}
+
+			#row1 {
+				width: auto;
+				background-color: #ccccff;
+			}
+
+			#row2 {
+				width: auto;
+				background-color: #ffe6ff;
+			}
+
+			#row3 {
+				width: auto;
+				padding: 20px 15px;
+				background-color: #cce6ff;
+			}
+
+			#row2 h2, h3 {
+				color: #9999ff;
+			}
+
+			#row3 h3 {
+				color: #9999ff;
+			}
+
+			.row2_column1 {
+				float: none;
+				width: auto;
+			}
+
+			.row2_column2 {
+				float: none;
+				width: auto;
+			}
+
+			.row3_column3 {
+				float: none;
+				width: auto;
+			}
+
+			.row3_column4 {
+				float: none;
+				width: auto;
+			}
+
+			img {
+				width: auto;
+				height: 300px;
+			}
 		}
 
 	</style>
@@ -28,51 +144,72 @@
 </head>
 
 <body>
+<div id="container">
+	<div id="row1">
+		<h1>Su A Ahn (Sua)</h1>
 
-	<h1>Su A Ahn (Sua)</h1>
+		<p><a href="mailto:suaahn@usc.edu">suaahn@usc.edu</a></p>
+	</div> <!-- closes row1 div -->
 
-	<p><em>University Park Campus<br>
-		University of Southern California<br>
-		Los Angeles, CA 90089<br>
-		323-533-5528<br>
-		<a href="mailto:suaahn@usc.edu">suaahn@usc.edu</a></em></p>
+	<div id="row2">
+		<div class="row2_column1">
+			<p>Favorite color: <b>Midnight Blue</b></p>
 
-	<h2>Objective</h2>
-	<p>Business Administration major seeking opportunity to work in the technology industry to gain experience by working with other professionals in the industry.</p>
+			<p>Favorite website: <a href="https://www.hardl.net" target="_blank">Hardl</a></p>
 
-	<h2><b>Education</b></h2>
-	<p><strong>University of Southern California</strong><br>
-		May 2025<br></p>
-		<ul>
-			<li>B.S. in Business Administration</li>
-			<li>Minor in Computer Programming</li>
-		</ul>
+			<h2>Favorite activity:</h2>
+			<img src="golf.jpg" alt="golf"/>
+		</div> <!-- closes column1 div -->
 
-	<h2>Experience</h2>
-	<p><strong>Public Relations Team Member</strong><br>
-		<em>Korean Career Oriented Student Organization (KCOSO)</em><br>
-		September 2021 - Present<br></p>
-		<ul>
-			<li>Assisted with member recruitment</li>
-			<li>Participated in seminars with guest speakers</li>
-		</ul>
+		<div class="row2_column2">
+			<h3>School Schedule</h3>
+			<ol>
+				<li>BUAD 280: Introduction to Financial Accounting</li>
+				<li>BUAD 307: Marketing Fundamentals</li>
+				<li>ITP 104: Introduction to Web Development</li>
+				<li>ITP 265: Object-Oriented Programming</li>
+				<li>LING 115: Language and Society</li>
+			</ol>
+		</div> <!-- closes column2 div -->
+		<div class="clearfloat"></div>
 
-	<h2>Skills</h2>
-		<h3>Programming Languages</h3>
-		<ul>
-			<li>Python</li>
-			<li>Java</li>
-			<li>HTML/CSS</li>
-		</ul>
+	</div> <!-- closes row2 div -->
 
-		<h3>Other</h3>
-		<ul>
-			<li>MS Excel</li>
-			<li>MS Word</li>
-			<li>MS PowerPoint</li>
-			<li>Final Cut Pro</li>
-			<li>imovie</li>
-		</ul>
+
+	<div id="row3">
+		<div class="row3_column3">
+			<h3>Assignments</h3>
+			<ul>
+				<li><a href="assignment01/index.html">Assignment 01: Web Resume</a></li>
+				<li><a href="assignment02/index.html">Assignment 02: TV Show/Movie Article</a></li>
+				<li><a href="assignment03/index.html">Assignement 03: Two-Column TV Show/Movie Article</a></li>
+				<li><a href="assignment04/index.html">Assignement 04: Calendar</a></li>
+				<li><a href="assignment05/index.html">Assignement 05: TV Show/Movie Photo Collage</a></li>
+				<li><a href="assignment06/index.html">Assignement 06: Fonts/Drop-Down Menu, Overlay Captions</a></li>
+				<li><a href="assignment07/index.html">Assignement 07: Final Project Proposal</a></li>
+				<li><a href="assignment08/index.html">Assignement 08: Final Project Homepage Only</a></li>
+				<li><a href="finalproject/index.html">Final Project</a></li>
+			</ul>
+		</div> <!-- closes column3 div -->
+
+		<div class="row3_column4">
+			<h3>Labs</h3>
+			<ul>
+				<li><a href="lab02/index.html">Lab 02: Student Page</a></li>
+				<li><a href="lab03/index.html">Lab 03: Updated Resume</a></li>
+				<li><a href="lab04/index.html">Lab 04: Student Layout Page</a></li>
+				<li><a href="lab05/index.html">Lab 05: Form Page</a></li>
+				<li><a href="lab06/index.html">Lab 06: Simple Photo Gallery</a></li>
+				<li><a href="lab07/index.html">Lab 07: Image Puzzle</a></li>
+				<li><a href="lab08/index.html">Lab 08: Responsive Student Page</a></li>
+				<li><a href="lab09/index.html">Lab 09: Product Promotion</a></li>
+				<li><a href="lab10/index.html">Lab 10: Animation</a></li>
+			</ul>
+		</div> <!-- closes column4 div -->
+		<div class="clearfloat"></div>
+	</div> <!-- closes row3 div -->
+
+</div> <!-- closes container div -->
 
 </body>
 </html>
