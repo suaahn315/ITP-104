@@ -1,1 +1,1 @@
-https://uscwebdev.github.io/itp104-submissions-sahn315/
+https://github.com/suaahn315/personal-website.git
